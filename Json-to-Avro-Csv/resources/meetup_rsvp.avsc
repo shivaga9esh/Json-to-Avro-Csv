@@ -1,0 +1,190 @@
+{
+  "type": "record",
+  "name": "Meetuprsvp",
+  "namespace": "com.yobi.training",
+  "fields": [
+    {
+	 "name":"venue",
+	 "type":["null", "record"],
+	 "default": null,
+     "type":{ 
+	    "type": "record",
+        "name": "venue",
+		"namespace":"com.yobi.training.venue",
+        "fields": [
+          {
+            "name": "venue_name",
+            "type": "string",
+            "default": "ServiceNow"
+          },
+          {
+            "name": "lon",
+            "type": "int",
+            "default": 0
+          },
+          {
+            "name": "lat",
+            "type": "int",
+            "default": 0
+          },
+          {
+            "name": "venue_id",
+            "type": "long",
+            "default": 0
+          }
+        ]
+     } 
+    },
+    {
+      "name": "visibility",
+      "type": "string",
+      "default": "public"
+    },
+    {
+      "name": "response",
+      "type": "string",
+      "default": "yes"
+    },
+    {
+      "name": "guests",
+      "type": "int",
+      "default": 0
+    },
+    {
+	"name":"member",
+     "type":{
+
+        "type": "record",
+        "name": "member",
+		"namespace":"com.yobi.training.member",
+        "fields": [
+          {
+            "name": "member_id",
+            "type": "long",
+            "default": 0
+          },
+		  {
+			  "name": "photo",
+			  "type": "string",
+			  "default": null
+		  },  
+          {
+            "name": "member_name",
+            "type": "string",
+            "default": "NONE"
+          }
+        ]
+     } 
+    },
+    {
+      "name": "rsvp_id",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name": "mtime",
+      "type": "long",
+      "default": 0
+    },
+    {
+      "name":"event",
+      "type":{ 
+	 
+        "type": "record",
+        "name": "event",
+		"namespace":"com.yobi.training.event",
+        "fields": [
+          {
+            "name": "event_name",
+            "type": "string",
+            "default": "ServiceNow"
+          },
+          {
+            "name": "event_id",
+            "type": "string",
+            "default": "NONE"
+          },
+          {
+            "name": "time",
+            "type": "long",
+            "default": 0
+          },
+          {
+            "name": "event_url",
+            "type": "string",
+            "default": "NONE"
+          }
+        ]
+      }
+    },
+    {
+	  "name":"group",
+      "type":{ 
+        "type": "record",
+        "name": "group",
+		"namespace":"com.yobi.training.group",
+        "fields": [
+          {
+		   "name":"group_topics",
+		   "type":{ 
+            "type": "array",
+			"namespace":"com.yobi.training.group",
+            "items": {
+              "name": "group_topics",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "urlkey",
+                  "type": "string"
+                },
+                {
+                  "name": "topic_name",
+                  "type": "string"
+                }
+              ]
+            }
+			}
+          },
+          {
+            "name": "group_city",
+            "type": "string",
+            "default": "Hyd"
+          },
+          {
+            "name": "group_country",
+            "type": "string",
+            "default": "India"
+          },
+          {
+            "name": "group_id",
+            "type": "long",
+            "default": 0
+          },
+          {
+			  "name": "group_name",
+			  "type": "string",
+			  "default": null
+		  },
+          {
+            "name": "group_lon",
+            "type": "double"
+          },
+          {
+            "name": "group_urlname",
+            "type": "string",
+            "default": "NONE"
+          },
+		  {
+			  "name": "group_state",
+			  "type": "string",
+			  "default": null
+		  },
+          {
+            "name": "group_lat",
+            "type": "double"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_144"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/Avro-tool/avro-tools-1.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/Avro-tool/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/Avro-tool/json-20140107.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/jackson-databind-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/jackson-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Bigdata/Desktop/Tasks/week1/jackson-annotations-2.9.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
